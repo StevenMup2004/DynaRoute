@@ -2,14 +2,25 @@
 
 <div align="center">
 
+[![Dataset on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-StevenMup2004%2FDynaGuard--Data-ffd21e?style=for-the-badge)](https://huggingface.co/datasets/StevenMup2004/DynaGuard-Data)
+[![Model on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Model-StevenMup2004%2FDynaRoute-ffd21e?style=for-the-badge)](https://huggingface.co/StevenMup2004/DynaRoute)
 ![Safety](https://img.shields.io/badge/Guardrail-DynaGuard%201.7B%20%2F%208B-blue?style=for-the-badge)
-![Router](https://img.shields.io/badge/Neural%20Router-5--Layer%20MLP-orange?style=for-the-badge)
 ![Cost Saving](https://img.shields.io/badge/Inference%20Cost%20Saving-60.1%25-brightgreen?style=for-the-badge)
-![Benchmark](https://img.shields.io/badge/Benchmark-English%20%26%20Vietnamese-purple?style=for-the-badge)
 
 *An Agentic Adaptive Model Selection Framework inspired by SafeRoute, dynamically routing prompts between lightweight safety classifiers and high-capacity LLM guardrails.*
 
 </div>
+
+---
+
+## 🤗 Hugging Face Hub Resources
+
+All official dataset benchmarks, routing groundtruth targets, and trained Multi-Layer Perceptron (MLP) neural router checkpoints are publicly hosted on Hugging Face Hub:
+
+* **📊 Evaluation & Training Dataset:** [datasets/StevenMup2004/DynaGuard-Data](https://huggingface.co/datasets/StevenMup2004/DynaGuard-Data)
+  * Contains `train_router.json` (~3k+ training instances) and `test_router.json` (1,086 bilingual English/Vietnamese benchmark samples).
+* **🧠 Neural Router Model Checkpoints:** [StevenMup2004/DynaRoute](https://huggingface.co/StevenMup2004/DynaRoute)
+  * Contains trained PyTorch model weights (`model.pt`) optimized via Focal Loss for causal adaptive model escalation.
 
 ---
 

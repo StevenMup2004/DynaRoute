@@ -2,8 +2,8 @@ from huggingface_hub import HfApi
 import os
 
 # 1. Tên repository bạn muốn tạo trên Hugging Face (Thay username của bạn vào)
-# Ví dụ: "dang-vh/safe-route-dynaguard"
-REPO_ID = "StevenMup2004/SafeRoute-final"
+# Ví dụ: "StevenMup2004/DynaRoute"
+REPO_ID = "StevenMup2004/DynaRoute"
 
 # 2. Đường dẫn tới thư mục chứa file model.pt của chúng ta
 LOCAL_MODEL_DIR = "/home/user04/save/dynaguard_1p7b_8b/bnn_small"
