@@ -17,7 +17,7 @@
 
 All official dataset benchmarks, routing groundtruth targets, and trained Multi-Layer Perceptron (MLP) neural router checkpoints are publicly hosted on Hugging Face Hub:
 
-* **📊 Evaluation & Training Dataset:** [datasets/StevenMup2004/DynaGuard-Data](https://huggingface.co/datasets/StevenMup2004/DynaGuard-Data)
+* **📊 Evaluation & Training Dataset:** [StevenMup2004/DynaGuard-Data](https://huggingface.co/datasets/StevenMup2004/DynaGuard-Data)
   * Contains `train_router.json` (~3k+ training instances) and `test_router.json` (1,086 bilingual English/Vietnamese benchmark samples).
 * **🧠 Neural Router Model Checkpoints:** [StevenMup2004/DynaRoute](https://huggingface.co/StevenMup2004/DynaRoute)
   * Contains trained PyTorch model weights (`model.pt`) optimized via Focal Loss for causal adaptive model escalation.
