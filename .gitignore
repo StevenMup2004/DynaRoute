@@ -1,0 +1,51 @@
+# ==============================================================================
+# GITIGNORE CHO THƯ MỤC GUARDRAIL/FIX-VER
+# Mục tiêu: Loại bỏ toàn bộ data json, log, checkpoint, chỉ giữ lại code Python
+# ==============================================================================
+
+# 1. Các file Dữ liệu & JSON (Data / Config)
+*.json
+*.jsonl
+*.csv
+*.tsv
+*.txt
+
+# 2. Các file Log & Output kết quả chạy
+*.log
+nohup.out
+*.out
+
+# 3. Các file Trọng số & Checkpoint PyTorch / Tensors
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.onnx
+
+# 4. Thư mục Cache Python & Virtual Env
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# 5. Các thư mục lưu trữ Trọng số, Log và Hidden States dung lượng lớn
+save/
+data/
+log/
+hidden_states*/
+outputs*/
+Latent_Policy_Guard/
+
+# ==============================================================================
+# LƯU Ý: Ngoại lệ (Exceptions)
+# Nếu bạn muốn Git CHẤP NHẬN gửi kèm một file json/config cụ thể nào đó 
+# (ví dụ valid_router.json), hãy bỏ dấu # ở dòng bên dưới:
+# !safe-route/valid_router.json
+# ==============================================================================
